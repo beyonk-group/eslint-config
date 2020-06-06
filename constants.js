@@ -1,12 +1,13 @@
 'use strict'
 
 module.exports = {
-  off: 0,
-  warn: 1,
-  error: 2,
+  off: 'off',
+  warn: 'warn',
+  error: 'error',
   single: 'single',
   any: 'any',
   never: 'never',
   always: 'always',
-  all: 'all'
+  all: 'all',
+  readonly: 'readonly'
 }
