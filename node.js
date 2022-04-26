@@ -6,5 +6,8 @@ module.exports = {
   extends: 'standard',
   rules: {
     'array-bracket-spacing': [ error, always, { objectsInArrays: true, arraysInArrays: true } ]
+  },
+  parserOptions: {
+    ecmaVersion: 2020
   }
 }
