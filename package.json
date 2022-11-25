@@ -25,7 +25,7 @@
   "homepage": "https://github.com/beyonk/eslint-config#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "8.28.0"
+    "eslint": "^8.0.0"
   },
   "dependencies": {
     "eslint-config-standard": "^17.0.0",
