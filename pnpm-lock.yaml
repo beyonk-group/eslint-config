@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   babel-eslint: ^10.1.0
-  eslint: 8.28.0
+  eslint: ^8.0.0
   eslint-config-standard: ^17.0.0
   eslint-plugin-import: ^2.26.0
   eslint-plugin-mocha: ^10.1.0
