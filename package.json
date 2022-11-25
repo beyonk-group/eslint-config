@@ -25,15 +25,15 @@
   "homepage": "https://github.com/beyonk/eslint-config#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "8.14.0"
+    "eslint": "8.28.0"
   },
   "dependencies": {
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-mocha": "^10.0.4",
-    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0"
+    "eslint-plugin-promise": "^6.1.1"
   },
   "volta": {
     "node": "16.5.0"
