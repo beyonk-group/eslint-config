@@ -22,7 +22,7 @@ module.exports = {
     browser: true
   },
   plugins: [
-    'svelte3'
+    'svelte'
   ],
   overrides: [
     {
