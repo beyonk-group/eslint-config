@@ -1,6 +1,6 @@
 import neostandard, { plugins } from 'neostandard'
 import mocha from 'eslint-plugin-mocha'
-import { error, always } from './constants.js'
+import { error, always, off } from './constants.js'
 
 export default [
   ...neostandard(),
@@ -9,7 +9,9 @@ export default [
   mocha.configs.flat.recommended,
   {
     rules: {
-      '@stylistic/array-bracket-spacing': [ error, always, { objectsInArrays: true, arraysInArrays: true } ]
+      '@stylistic/array-bracket-spacing': [ error, always, { objectsInArrays: true, arraysInArrays: true } ],
+      'mocha/no-mocha-arrows': [ off ],
+      'mocha/no-setup-in-describe': [ off ]
     }
   }
 ]
