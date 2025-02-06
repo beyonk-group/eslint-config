@@ -1,13 +1,21 @@
-'use strict'
+const off = 'off'
+const warn = 'warn'
+const error = 'error'
+const single = 'single'
+const any = 'any'
+const never = 'never'
+const always = 'always'
+const all = 'all'
+const readonly = 'readonly'
 
-module.exports = {
-  off: 'off',
-  warn: 'warn',
-  error: 'error',
-  single: 'single',
-  any: 'any',
-  never: 'never',
-  always: 'always',
-  all: 'all',
-  readonly: 'readonly'
+export {
+  off,
+  warn,
+  error,
+  single,
+  any,
+  never,
+  always,
+  all,
+  readonly
 }
