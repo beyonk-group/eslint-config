@@ -9,50 +9,39 @@
 ## ESLint configuration
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![CircleCI](https://circleci.com/gh/beyonk-adventures/eslint-config.svg?style=shield)](https://circleci.com/gh/beyonk-adventures/eslint-config)
-
-This is essentially a fork of [the eslint-config I made](https://github.com/appliedblockchain/eslint-config/) whilst at Applied Blockchain, but adapted to have Node and Svelte linting, rather than Node and React.
-
-It is based on `standard` with a few minor tweaks for neatness.
-
-## Contributing
-
-Want to add an eslint rule? Open a PR and use gh-polls for voting: https://app.gh-polls.com/
-
 ## Usage
 
 Installation:
 
 ```bash
-npm i -D eslint @beyonk/eslint-config
+pnpm i --save-dev eslint @beyonk/eslint-config
 ```
 
-### Node Modules
+Create an eslint.config.mjs file in the root directory of your project, or monorepo.
 
-In your project's package.json, use the shorthand syntax
+If you want specific rules for a project within the monorepo, create this file there, too, and customise it as required.
 
-```json
-  "eslintConfig": {
-    "extends": "@beyonk"
-  }
+Config files don't inherit from their parents.
+
+```js
+import recommended from '@beyonk/eslint-config/recommended'
+
+export default [
+  ...recommended
+]
 ```
 
-### Svelte Components
+### Configs
 
-In your project's package.json, use the shorthand syntax
+There are multiple config types within the project that you can use. Look in `package.json/exports` for a comprehensive list:
 
-```json
-  "eslintConfig": {
-    "extends": "@beyonk/eslint-config/svelte"
-  }
-```
+```js
+import recommended from '@beyonk/eslint-config/recommended'
+import svelte from '@beyonk/eslint-config/svelte'
 
-## Linting
-
-This project self-lints:
-
-```bash
-npm i
-npm run lint
+export default [
+  ...svelte
+]
 ```
 
 ## Releasing
