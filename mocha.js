@@ -1,6 +1,7 @@
 import mocha from 'eslint-plugin-mocha'
 import { off } from './constants.js'
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   mocha.configs.flat.recommended,
   {

@@ -1,6 +1,7 @@
 import { plugins } from 'neostandard'
-import { error, always, off } from './constants.js'
+import { off } from './constants.js'
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   plugins.n.configs['flat/recommended'],
   {
