@@ -1,11 +1,11 @@
 {
   "name": "@beyonk/eslint-config",
-  "version": "8.0.2",
+  "version": "9.0.0",
   "description": "Eslint config for beyonk",
-  "main": "node.js",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint -c node.js .",
-    "lint:ci": "eslint -c node.js --format junit -o reports/junit/eslint-results.xml"
+    "lint": "eslint -c index.js .",
+    "lint:ci": "eslint -c index.js --format junit -o reports/junit/eslint-results.xml"
   },
   "repository": "beyonk/eslint-config",
   "keywords": [
@@ -21,18 +21,29 @@
   },
   "homepage": "https://github.com/beyonk/eslint-config#readme",
   "dependencies": {
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-mocha": "^10.2.0",
-    "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-svelte": "^2.35.1"
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-svelte": "^3.1.0",
+    "eslint-plugin-vitest": "^0.5.4",
+    "globals": "^16.0.0",
+    "neostandard": "^0.12.1",
+    "svelte": "^5.22.6"
   },
   "devDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^9.21.0",
+    "eslint-plugin-mocha": "^10.5.0"
   },
   "peerDependencies": {
-    "eslint": "^8.56.0"
+    "eslint": "^9.21.0"
   },
-  "packageManager": "pnpm@8.15.1"
+  "packageManager": "pnpm@10.4.1",
+  "type": "module",
+  "exports": {
+    "./recommended": "./default.js",
+    "./mocha": "./mocha.js",
+    "./node": "./node.js",
+    "./vitest": "./vitest.js",
+    "./svelte": "./svelte.js",
+    "./sapper": "./sapper.js",
+    "./constants": "./constants.js"
+  }
 }

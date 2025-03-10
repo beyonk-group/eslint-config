@@ -1,13 +1,13 @@
-'use strict'
+import { plugins } from 'neostandard'
+import { off } from './constants.js'
 
-const { always, error } = require('./constants')
-
-module.exports = {
-  extends: 'standard',
-  rules: {
-    'array-bracket-spacing': [ error, always, { objectsInArrays: true, arraysInArrays: true } ]
-  },
-  parserOptions: {
-    ecmaVersion: 2020
+/** @type {import('eslint').Linter.Config[]} */
+export default [
+  plugins.n.configs['flat/recommended'],
+  {
+    rules: {
+      'n/no-missing-require': [ off ],
+      'n/no-unsupported-features/node-builtins': [ off ]
+    }
   }
-}
+]

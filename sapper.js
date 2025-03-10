@@ -2,8 +2,6 @@ import js from '@eslint/js'
 import svelte from 'eslint-plugin-svelte'
 import globals from 'globals'
 import { warn, off } from './constants.js'
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -11,7 +9,7 @@ export default [
   ...svelte.configs.recommended,
   {
     ignores: [
-      "**/.svelte-kit/"
+      "**/__sapper__/"
     ]
   },
   {
@@ -23,15 +21,13 @@ export default [
     }
   },
   {
-    files: [ '**/*.svelte', '**/*.svelte.js' ],
-    languageOptions: {
-      parserOptions: {
-        svelteConfig: readFileSync(join(process.cwd(), 'svelte.config.js'), 'utf8')
-      }
-    },
+    files: [ '**/*.svelte', '**/*.html' ],
     rules: {
       'svelte/require-each-key': warn,
       'svelte/no-at-html-tags': off
-    }
+    },
+    ignores: [
+      '**/template.html'
+    ]
   }
 ]
