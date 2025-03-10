@@ -8,7 +8,8 @@
 
 ## ESLint configuration
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![CircleCI](https://circleci.com/gh/beyonk-adventures/eslint-config.svg?style=shield)](https://circleci.com/gh/beyonk-adventures/eslint-config)
+Beyonk ESLint rules
+
 ## Usage
 
 Installation:
@@ -49,7 +50,7 @@ export default [
 To release a new version, check out the code on your local machine, then:
 
 ```bash
-npm version minor
+pnpm version minor
 git push && git push --tags
 ```
 
