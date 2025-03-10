@@ -43,6 +43,7 @@
     "./node": "./node.js",
     "./vitest": "./vitest.js",
     "./svelte": "./svelte.js",
+    "./sapper": "./sapper.js",
     "./constants": "./constants.js"
   }
 }

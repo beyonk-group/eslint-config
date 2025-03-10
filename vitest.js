@@ -16,9 +16,6 @@ export default [
       globals: {
         ...vitest.environments.env.globals
       }
-    },
-    rules: {
-      'promise/always-return': off
     }
   },
   {

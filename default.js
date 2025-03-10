@@ -1,5 +1,5 @@
 import neostandard, { plugins } from 'neostandard'
-import { error, always } from './constants.js'
+import { error, always, off } from './constants.js'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -7,12 +7,8 @@ export default [
   plugins.promise.configs['flat/recommended'],
   {
     rules: {
-      '@stylistic/array-bracket-spacing': [ error, always, { objectsInArrays: true, arraysInArrays: true } ]
+      '@stylistic/array-bracket-spacing': [ error, always, { objectsInArrays: true, arraysInArrays: true } ],
+      'promise/always-return': off
     }
-  },
-  {
-    ignores: [
-      '**/.svelte-kit/'
-    ]
   }
 ]
