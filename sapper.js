@@ -25,6 +25,9 @@ export default [
     rules: {
       'svelte/require-each-key': warn,
       'svelte/no-at-html-tags': off
-    }
+    },
+    ignores: [
+      '**/template.html'
+    ]
   }
 ]
