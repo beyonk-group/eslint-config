@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/beyonk/eslint-config/issues"
   },
-  "homepage": "https://github.com/beyonk/eslint-config#readme",
+  "homepage": "https://github.com/beyonk/eslint-config#README.MD",
   "dependencies": {
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-svelte": "^3.1.0",
