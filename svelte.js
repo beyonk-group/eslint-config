@@ -11,7 +11,8 @@ export default [
   ...svelte.configs.recommended,
   {
     ignores: [
-      "**/.svelte-kit/"
+      "**/.svelte-kit/",
+      "**/static/"
     ]
   },
   {
