@@ -9,7 +9,8 @@ export default [
   ...svelte.configs.recommended,
   {
     ignores: [
-      "**/__sapper__/"
+      "**/__sapper__/",
+      ".vercel/"
     ]
   },
   {
