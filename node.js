@@ -1,5 +1,5 @@
 import { plugins } from 'neostandard'
-import { off } from './constants.js'
+import { off, error } from './constants.js'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -7,7 +7,12 @@ export default [
   {
     rules: {
       'n/no-missing-require': [ off ],
-      'n/no-unsupported-features/node-builtins': [ off ]
+      'n/no-unsupported-features/node-builtins': [ off ],
+      'n/no-extraneous-import': [ error, {
+          'allowModules': [
+            '@beyonk/eslint-config'
+          ]
+      }]
     }
   }
 ]
