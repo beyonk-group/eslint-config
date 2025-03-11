@@ -9,7 +9,7 @@ export default [
       'n/no-missing-require': [ off ],
       'n/no-unsupported-features/node-builtins': [ off ],
       'n/no-extraneous-import': [ error, {
-          'allowModules': [
+          allowModules: [
             '@beyonk/eslint-config'
           ]
       }]
