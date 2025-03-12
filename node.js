@@ -14,5 +14,11 @@ export default [
         ]
       } ]
     }
+  },
+  {
+    files: [ '**/**.spec.js' ],
+    rules: {
+      'n/no-unpublished-import': [ off ]
+    }
   }
 ]
