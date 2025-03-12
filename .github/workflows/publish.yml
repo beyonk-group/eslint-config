@@ -15,7 +15,7 @@ jobs:
 
       - name: dependencies
         run: |
-          pnpx corepack install
+          npx corepack install
           corepack enable
           pnpm i
 
@@ -32,7 +32,7 @@ jobs:
 
       - name: dependencies
         run: |
-          pnpx corepack install
+          npx corepack install
           corepack enable
           pnpm i
 
