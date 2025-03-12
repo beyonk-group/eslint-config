@@ -4,8 +4,8 @@
   "description": "Eslint config for beyonk",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint -c index.js .",
-    "lint:ci": "eslint -c index.js --format junit -o reports/junit/eslint-results.xml"
+    "lint": "eslint -c _self-lint.js .",
+    "lint:ci": "pnpm lint --format junit -o reports/junit/eslint-results.xml"
   },
   "repository": "beyonk/eslint-config",
   "keywords": [
@@ -23,6 +23,7 @@
   "dependencies": {
     "@eslint/js": "^9.22.0",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-mocha": "^10.5.0",
     "eslint-plugin-svelte": "^3.1.0",
     "eslint-plugin-vitest": "^0.5.4",
     "globals": "^16.0.0",
@@ -31,7 +32,7 @@
   },
   "devDependencies": {
     "eslint": "^9.21.0",
-    "eslint-plugin-mocha": "^10.5.0"
+    "eslint-formatter-junit": "^8.40.0"
   },
   "peerDependencies": {
     "eslint": "^9.21.0"
