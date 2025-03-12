@@ -15,8 +15,7 @@ jobs:
 
       - name: dependencies
         run: |
-          npx corepack install
-          corepack enable
+          npx corepack@latest enable
           pnpm i
 
       - run: pnpm lint:ci
@@ -32,8 +31,7 @@ jobs:
 
       - name: dependencies
         run: |
-          npx corepack install
-          corepack enable
+          npx corepack@latest enable
           pnpm i
 
       - run: |
